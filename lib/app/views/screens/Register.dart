@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:lamety/app/views/screens/Login.dart';
+import 'package:lamety/vendor/Configration.dart';
 
 import 'Verify.dart';
 
@@ -15,7 +16,7 @@ class _Register extends State<Register> {
   @override
   Widget build(BuildContext context) {
     return Directionality(
-      textDirection: TextDirection.rtl,
+      textDirection: Configration.getAppDirectionality(),
       child: Scaffold(
         body: SafeArea(
           child: Container(

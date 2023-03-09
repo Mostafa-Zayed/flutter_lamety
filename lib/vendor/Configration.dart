@@ -13,6 +13,8 @@
  * @license   
  */
 
+import 'dart:ui';
+
 import '../app/models/Language.dart';
 
 class Configration {
@@ -90,6 +92,19 @@ class Configration {
    */
   static List<Language> getLanguages() {
     return Configration.environment['languages'];
+  }
+
+  /*
+   * this method get default app Directionality depend on default language
+   *
+   * @return dynamic
+   */
+  static dynamic getAppDirectionality() {
+    return Configration.environment['app_language_rtl']
+        ? (Configration.environment['default_language'] != 'ar'
+            ? TextDirection.ltr
+            : TextDirection.rtl)
+        : TextDirection.ltr;
   }
 
   /*

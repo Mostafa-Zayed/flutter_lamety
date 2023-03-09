@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:lamety/app/views/screens/splash/SplashOne.dart';
+import 'package:lamety/vendor/Configration.dart';
 
 class Logo extends StatefulWidget {
   @override
@@ -19,12 +20,15 @@ class _Logo extends State<Logo> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Container(
-        padding: const EdgeInsets.all(30),
-        width: double.infinity,
-        height: double.infinity,
-        child: Image.asset('assets/images/logo.jfif'),
+    return Directionality(
+      textDirection: Configration.getAppDirectionality(),
+      child: Scaffold(
+        body: Container(
+          padding: const EdgeInsets.all(30),
+          width: double.infinity,
+          height: double.infinity,
+          child: Image.asset('assets/images/logo.jfif'),
+        ),
       ),
     );
   }
