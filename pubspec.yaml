@@ -65,6 +65,7 @@ flutter:
     - assets/images/splash_one.png
     - assets/images/splash_two.png
     - assets/images/splash_three.png
+    - assets/images/car.jfif
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 

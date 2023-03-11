@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:lamety/app/views/screens/cars/ShowCars.dart';
+import 'package:lamety/app/views/screens/reservations.dart';
 import 'package:lamety/app/views/screens/splash/SplashOne.dart';
 import 'package:lamety/vendor/Configration.dart';
 
@@ -15,7 +17,7 @@ class _Logo extends State<Logo> {
     new Future.delayed(
         const Duration(seconds: 5),
         () => Navigator.push(
-            context, MaterialPageRoute(builder: (context) => SplashOne())));
+            context, MaterialPageRoute(builder: (context) => Reservations())));
   }
 
   @override
